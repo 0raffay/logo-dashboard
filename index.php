@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <?php include('includes/header-styles.php') ?>
+  <title>Home</title>
+</head>
+
+<body class="noscroll">
+  <?php include('includes/header.php') ?>
+
+  <div class="body__wrapper">
+
+    <?php include('sections/inc-side__panel.php') ?>
+
+    <main>
+      <?php include('sections/inc-dash__banner.php') ?>
+      <section class="mainTabSection dash__TabSection ">
+        <div class="container">
+          <div class="tab__text">
+            <h4 class="dash__sectionHeading">Your complete marketing toolkit</h4>
+            <p class="dash__sectionSubHeading">We’ve worked for a wide range of industries. To ensure a personalizedexperience, tell us what niche and specific style you prefer.</p>
+          </div>
+
+          <div class="dash__tabButtons dash__tabButtonsMain">
+            <button>Logo Design</button>
+            <button>Brand Kit</button>
+            <button>Stationary</button>
+            <button>Website</button>
+            <button>Business Registration</button>
+            <button>Trade Mark</button>
+            <button>Social Media</button>
+            <button>Digital Marketing Consultant</button>
+            <button>Brand Conultant</button>
+          </div>
+
+          <div class="dash__tabPanelMain">
+            <!--NOTE: Sequnce of these divs is important here for the tabs to work correctly  
+                The buttons opens the panel with the corresponding (index). If the sequence is disturbed, Then the
+                wrong panel will be displayed.
+              -->
+
+            <!-- 1- Logo Design START-->
+            <div class="dash__tabPanel">
+              <div class="dash__tabPanelContainer">
+                <div class="img__wrap">
+                  <img src="./assets/images/logo-panel-1.png" alt="">
+                </div>
+                <div class="img__wrap">
+                  <img src="./assets/images/logo-panel-2.png" alt="">
+                </div>
+                <div class="img__wrap">
+                  <img src="./assets/images/logo-panel-3.png" alt="">
+                </div>
+                <div class="img__wrap">
+                  <img src="./assets/images/logo-panel-4.png" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- 1- Logo Design END-->
+            <!-- 2- Brand Kit START -->
+            <div class="dash__tabPanel">
+                  <div class="dash__tabPanelContainer">
+                <div class="img__wrap">
+                  <img src="./assets/images/logo-panel-2.png" alt="">
+                </div>
+                <div class="img__wrap">
+                  <img src="./assets/images/logo-panel-3.png" alt="">
+                </div>
+                <div class="img__wrap">
+                  <img src="./assets/images/logo-panel-4.png" alt="">
+                </div>
+                <div class="img__wrap">
+                  <img src="./assets/images/logo-panel-1.png" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- 2- Brand Kit END -->
+
+          </div>
+
+        </div>
+      </section>
+      <?php include('sections/inc-chatIcon.php')?>
+    </main>
+  </div>
+
+  <?php include('includes/footer.php') ?>
+  <?php include('includes/footer-scripts.php') ?>
+</body>
+
+</html>
